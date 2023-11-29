@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Check if the correct number of arguments are provided
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <URL> <output_file>"
+    exit 1
+fi
+
+# Assign the provided arguments to variables
+url=$1
+output_file=$2
+
+# Run ffmpeg with the provided options
+ffmpeg -protocol_whitelist file,https,tcp,tls -i "$url" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 "$output_file".mp4
+
+# Check the exit status of ffmpeg
+if [ $? -eq 0 ]; then
+  echo "Conversion successful!"
+else
+    echo "Error during conversion. Check the input parameters and try again."
+fi
