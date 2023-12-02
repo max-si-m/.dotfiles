@@ -13,7 +13,12 @@ return require('packer').startup(function(use)
   use({ 'rose-pine/neovim', as = 'rose-pine' })
 
   use('ThePrimeagen/vim-be-good')
-  use('ThePrimeagen/harpoon')
+  use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { {"nvim-lua/plenary.nvim"} }
+  }
+
 
   use("github/copilot.vim")
 
