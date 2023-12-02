@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/vim-be-good')
   use('ThePrimeagen/harpoon')
 
+  use("github/copilot.vim")
+
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function()
