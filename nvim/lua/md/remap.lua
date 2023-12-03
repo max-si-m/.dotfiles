@@ -21,7 +21,7 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- greatest remap ever: paste text without overwriting the clipboard
-vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("x", "<leader>pp", [["_dP]])
 -- greatest remap ever: delete text without overwriting the clipboard
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
