@@ -32,9 +32,10 @@ local cmp_select = {behavior = cmp.SelectBehavior.Select}
 
 cmp.setup({
   sources = {
-    {name = 'path'},
     {name = 'nvim_lsp'},
     {name = 'nvim_lua'},
+    {name = 'buffer', keyword_length = 4},
+    {name = 'path'},
   },
   formatting = lsp_zero.cmp_format(),
   mapping = cmp.mapping.preset.insert({
