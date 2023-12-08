@@ -20,8 +20,8 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.cmd('colorscheme rose-pine')
 vim.opt.termguicolors = true
+vim.cmd('colorscheme rose-pine')
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
