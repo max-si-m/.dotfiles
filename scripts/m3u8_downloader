@@ -11,7 +11,7 @@ url=$1
 output_file=$2
 
 # Run ffmpeg with the provided options
-ffmpeg -protocol_whitelist file,https,tcp,tls -i "$url" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 "$output_file".mp4
+ffmpeg -protocol_whitelist file,https,tcp,tls -i "$url" -bsfaac_adtstoasc -vcodec libx264 -crf 23 -c:a aac -b:a 128k "$output_file.mp4"
 
 # Check the exit status of ffmpeg
 if [ $? -eq 0 ]; then
