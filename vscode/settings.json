@@ -1,0 +1,134 @@
+{
+  "editor.acceptSuggestionOnEnter": "off",
+  "files.insertFinalNewline": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.rulers": [80, 120],
+  "editor.trimAutoWhitespace": true,
+  "auto-close-tag.fullMode": true,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSaveTimeout": 5000,
+  "ruby.format": "rubocop",
+  "extensions.ignoreRecommendations": false,
+  "workbench.statusBar.feedback.visible": false,
+  "files.trimFinalNewlines": true,
+  "ruby.lint": {
+    "fasterer": true
+  },
+  "ruby.lintDebounceTime": 500,
+  "workbench.colorTheme": "Ocean-Dark-Soda",
+  "ruby.specClearTerminal": false,
+  "breadcrumbs.enabled": true,
+  "editor.minimap.enabled": false,
+  "php.validate.enable": false,
+  "php.suggest.basic": false,
+  "githubPullRequests.queries": [
+    {
+      "label": "Waiting For My Review",
+      "query": "is:open review-requested:${user}"
+    },
+    {
+      "label": "Assigned To Me",
+      "query": "is:open assignee:${user}"
+    },
+    {
+      "label": "Created By Me",
+      "query": "is:open author:${user}"
+    },
+    {
+      "label": "Mentioned Me",
+      "query": "is:open mentions:${user}"
+    }
+  ],
+  "workbench.startupEditor": "newUntitledFile",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "go.useLanguageServer": true,
+  "go.formatTool": "goimports",
+  "ruby.rubocop.useBundler": true,
+  "[ruby]": {
+  },
+  "[go]": {
+    "editor.tabSize": 4,
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "slim",
+    "pliantext": "haml"
+  },
+  "search.searchEditor.defaultNumberOfContextLines": 2,
+  "search.showLineNumbers": true,
+  "search.smartCase": true,
+  "go.toolsManagement.autoUpdate": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "editor.linkedEditing": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "yaml": false,
+    "typescript": false,
+    "javascript": false,
+    "ruby": true
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "ruby.useBundler": true,
+  "ruby.intellisense": "rubyLocate",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.inlineSuggest.showToolbar": "always",
+
+  // Vim
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+  ],
+  "window.zoomLevel": 2,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.stickyScroll.enabled": false,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "supermaven.enable": {
+    "*": true,
+    "javascript": false,
+    "go": false,
+    "ruby": false
+  },
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "security.workspace.trust.untrustedFiles": "open",
+  "ruby.rubocop.onSave": false,
+  "rubyLsp.featureFlags": {
+    "all": true
+  },
+  "chat.commandCenter.enabled": false
+}
+
