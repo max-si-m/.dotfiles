@@ -1,7 +1,6 @@
 [user]
   user = Maksym Dzhulii
   email = mak7.dj@gmail.com
-  signingkey = D95F254B120BDE1A
 	name = Maksym Dzhulii
 [color "diff-highlight"]
   oldNormal = red bold
